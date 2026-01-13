@@ -15,7 +15,7 @@ const WorldSection: React.FC = () => {
       <div className="max-w-4xl bg-black/20 backdrop-blur-sm p-8 md:p-10 border-t border-b border-slate-600/50 hover:bg-black/50 transition-colors duration-500">
         <p className="text-slate-200 leading-loose text-xl md:text-2xl font-chosun tracking-wide">
           200년간 지속된 <span className="text-cyan-400 font-bold">'극야'</span>가 끝나고, 
-          20년의 <span className="text-slate-400 font-bold">'긴 밤'</span>이 막 지나갔다. 
+          20년의 <span className="text-slate-400 font-bold">'긴 밤'</span>이 막 지나갔다. <br />
           대륙은 황폐화되었고, 감염체들은 또다른 희생자들을 찾아 헤메이고 있다.
           <br/><br/>
           해는 짧고, 어둠은 여전히 길 뿐.

@@ -47,7 +47,7 @@ export const CHARACTERS: Character[] = [
     image: "https://od.lk/s/OF8xOTk4OTI4NjVf/SS.png",
     // ▼ [이미지 주소 입력] 소냐 두상 이미지 (클릭 전)
     headshot: "https://od.lk/s/OF8xOTk5MTI2NDhf/SS_head.png", // 이곳을 두상 이미지로 교체하세요
-    description: "구호단 출신의 성직자.\n곤봉과 성물을 함께 사용하며, 끝없는 심연 감염 수습에 지쳐있지만 굳은 신념으로 묵묵히 견디는 중이다.",
+    description: "구호단 출신의 성직자.\n곤봉과 독특한 등불 형태의 성물을 함께 사용한다. 끝없는 심연 감염 수습에 지쳐있으나 굳은 신념으로 묵묵히 견디는 중이다.",
     quote: "모두에게 신의 가호가 있기를.",
     specialty: { label: "힐러, 탱커" }
   },

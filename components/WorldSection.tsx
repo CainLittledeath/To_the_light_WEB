@@ -49,6 +49,12 @@ const WorldSection: React.FC = () => {
                     극야 직후의 암흑기. 기아, 감염, 그리고 어둠 학자와 마법사들을 향한 잔혹한 마녀사냥의 시대.
                   </span>
                 </li>
+                <li className="flex flex-col gap-3 group-hover:text-white transition-colors">
+                  <span className="font-bold text-xl text-slate-200 group-hover:text-white group-hover:drop-shadow-[0_0_5px_rgba(255,255,255,0.5)] transition-all">■ 심연 교단 (The Abyss Order)</span>
+                  <span className="leading-relaxed opacity-80 pl-4 border-l border-slate-600 group-hover:border-white/50 transition-colors">
+                    '긴 밤' 시절 등장한 의문의 종교 단체. 감염 확산을 악화시킨 주 원인 중 하나로 지목되고 있다.
+                  </span>
+                </li>
               </ul>
            </div>
         </div>

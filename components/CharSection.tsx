@@ -8,9 +8,16 @@ const CharacterSection: React.FC = () => {
 
   // Helper to determine modal image style based on Character ID
   const getModalImageStyle = (id: number) => {
-    if (id === 2) return { transform: 'scale(0.9)' }; // Sonya - shrink
+    // Sonya (id 2): Remove scale to fill box (no margin), shift focus down to show bottom
+    if (id === 2) return { objectPosition: 'center 35%' }; 
     if (id === 3 || id === 4) return { transform: 'scale(1.15)' }; // Nocturne & June - enlarge
     return {};
+  };
+
+  // Helper to determine card image style (headshot) based on Character ID
+  const getCardImageStyle = (id: number) => {
+    // Default top alignment for all character cards (Sonya reverted)
+    return { objectPosition: 'top' };
   };
 
   return (
@@ -37,13 +44,13 @@ const CharacterSection: React.FC = () => {
                  {/* 
                     1. Image Area (Pre-click)
                     Changed to use 'char.headshot' provided by the user.
-                    Removed scale hacks since the image is expected to be a pre-cropped headshot.
                  */}
                  <div className="h-[55%] w-full relative overflow-hidden border-b border-slate-800">
                     <img 
                       src={char.headshot} 
                       alt={char.name} 
-                      className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105 filter grayscale group-hover:grayscale-0"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale group-hover:grayscale-0"
+                      style={getCardImageStyle(char.id)}
                       loading="eager"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
